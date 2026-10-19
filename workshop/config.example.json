@@ -1,0 +1,14 @@
+{
+  "host": "127.0.0.1",
+  "port": 4180,
+  "dataDir": "data",
+  "robots": [
+    { "id": "training-arm", "name": "Сварка · Робот 1", "mode": "simulation", "lineId": "welding", "process": "welding" },
+    { "id": "training-arm-2", "name": "Сварка · Робот 2", "mode": "simulation", "lineId": "welding", "process": "welding" },
+    { "id": "paint-arm", "name": "Покраска · Робот 1", "mode": "simulation", "lineId": "painting", "process": "painting" },
+    { "id": "paint-arm-2", "name": "Покраска · Робот 2", "mode": "simulation", "lineId": "painting", "process": "painting" }
+  ],
+  "production": { "enabled": true, "beltSpeed": 0.35 },
+  "ollama": { "url": "http://127.0.0.1:11434", "model": "" },
+  "siemens": {}
+}

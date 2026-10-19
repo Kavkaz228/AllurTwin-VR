@@ -1,0 +1,26 @@
+{
+  "id": "training-arm-6",
+  "name": "Training Arm 6 — fictional simulation model",
+  "units": "metres-radians",
+  "basePosition": { "x": 0, "y": 0.1, "z": 0 },
+  "toolOffset": { "x": 0.14, "y": 0, "z": 0 },
+  "home": [0, 0.9, -1.2, 0, 0.3, 0],
+  "joints": [
+    { "name": "Base", "axis": [0, 1, 0], "offset": [0, 0, 0], "min": -3.141592653589793, "max": 3.141592653589793, "maxSpeed": 0.7, "radius": 0.055 },
+    { "name": "Shoulder", "axis": [0, 0, 1], "offset": [0, 0.25, 0], "min": -2.4, "max": 2.4, "maxSpeed": 0.6, "radius": 0.05 },
+    { "name": "Elbow", "axis": [0, 0, 1], "offset": [0.42, 0, 0], "min": -2.65, "max": 2.65, "maxSpeed": 0.7, "radius": 0.045 },
+    { "name": "Wrist roll", "axis": [1, 0, 0], "offset": [0.34, 0, 0], "min": -3.141592653589793, "max": 3.141592653589793, "maxSpeed": 1, "radius": 0.04 },
+    { "name": "Wrist pitch", "axis": [0, 0, 1], "offset": [0.1, 0, 0], "min": -2.5, "max": 2.5, "maxSpeed": 1, "radius": 0.035 },
+    { "name": "Tool roll", "axis": [1, 0, 0], "offset": [0.1, 0, 0], "min": -3.141592653589793, "max": 3.141592653589793, "maxSpeed": 1.2, "radius": 0.03 }
+  ],
+  "toolRadius": 0.03,
+  "workspace": { "min": { "x": -1.5, "y": -0.1, "z": -1.5 }, "max": { "x": 1.5, "y": 1.8, "z": 1.5 } },
+  "obstacles": [
+    { "id": "machine-exclusion", "min": { "x": 0.4, "y": 0.02, "z": -0.75 }, "max": { "x": 0.8, "y": 0.48, "z": -0.35 } }
+  ],
+  "ik": { "iterations": 100, "positionTolerance": 0.0015, "orientationTolerance": 0.015, "orientationWeight": 0.35, "damping": 0.025, "maxStep": 0.15 },
+  "pathStepRadians": 0.04,
+  "maxPathSamples": 1024,
+  "gripperSpeed": 1,
+  "maxTickSeconds": 0.1
+}

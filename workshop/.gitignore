@@ -1,0 +1,8 @@
+node_modules/
+data/
+.env
+config.local.json
+config.ai.local.json
+tools/ollama/
+certs/
+*.log

@@ -1,0 +1,18 @@
+{
+  "initialSource": 0,
+  "screenLayer": 31,
+  "screenWidthMetres": 2.4,
+  "staleAfterSeconds": 2.0,
+  "requestTimeoutMilliseconds": 5000,
+  "maximumJpegBytes": 2097152,
+  "maximumImageDimension": 2048,
+  "maximumImagePixels": 4194304,
+  "virtualCameraOffset": { "x": 7.0, "y": 5.0, "z": -9.0 },
+  "virtualCameraLookOffset": { "x": 0.0, "y": 0.3, "z": 0.0 },
+  "sources": [
+    { "name": "Обзор виртуального цеха", "kind": "virtual", "width": 1280, "height": 720, "framesPerSecond": 30 },
+    { "name": "USB-камера ПК", "kind": "webcam", "deviceName": "", "width": 1280, "height": 720, "framesPerSecond": 15 },
+    { "name": "Сетевая камера · MJPEG", "kind": "mjpeg", "url": "", "bearerTokenEnvironment": "", "usernameEnvironment": "", "passwordEnvironment": "", "width": 1280, "height": 720, "framesPerSecond": 15 },
+    { "name": "Сетевая камера · JPEG-снимки", "kind": "snapshot", "url": "", "bearerTokenEnvironment": "", "usernameEnvironment": "", "passwordEnvironment": "", "width": 1280, "height": 720, "framesPerSecond": 5 }
+  ]
+}

@@ -1,0 +1,18 @@
+# Render Blueprint: free online demo of Allur twin built from deploy/demo/Dockerfile.
+# Render generates JURY_PASSWORD itself (random 256-bit value): nothing to type at deploy time.
+# Read it in the dashboard: allur-twin-demo → Environment → JURY_PASSWORD.
+services:
+  - type: web
+    name: allur-twin-demo
+    runtime: docker
+    plan: free
+    dockerfilePath: ./deploy/demo/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: JURY_PASSWORD
+        generateValue: true
+      - key: JURY_USERNAME
+        value: jury
+      - key: JURY_ROLE
+        value: operator

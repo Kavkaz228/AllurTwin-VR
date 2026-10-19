@@ -1,0 +1,9 @@
+.vr-launch{display:flex;flex-direction:column;align-items:flex-end;gap:7px;max-width:330px}
+.vr-launch .vr-launch-button{background:var(--primary);color:var(--on-primary,#101a2a);border:1px solid var(--primary);border-radius:13px;padding:12px 18px;gap:10px;min-height:46px;white-space:nowrap;font-weight:600;box-shadow:0 5px 20px color-mix(in srgb,var(--primary) 16%,transparent)}
+.vr-launch .vr-launch-button:hover:not(:disabled){filter:brightness(1.09);transform:translateY(-1px)}
+.vr-launch .vr-launch-button:focus-visible{outline:2px solid var(--primary);outline-offset:4px}
+.vr-launch .vr-launch-button:disabled{opacity:.6;cursor:wait}
+.vr-launch-status{font-size:10px;color:var(--muted);line-height:1.5;text-align:right;max-width:330px;overflow-wrap:anywhere}
+.vr-launch-status.error{color:var(--danger)}
+@media(max-width:660px){.vr-launch{align-items:flex-start;width:100%;max-width:none}.vr-launch-status{text-align:left}.page-heading .heading-actions:has(.vr-launch){width:100%;align-items:flex-start}.vr-launch .vr-launch-button{min-height:46px}}
+@media(prefers-reduced-motion:reduce){.vr-launch .vr-launch-button:hover:not(:disabled){transform:none}}

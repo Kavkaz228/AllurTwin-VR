@@ -1,0 +1,30 @@
+Allur Twin × VR Workshop — portable distribution
+
+Includes user-supplied Allur Twin code and the project's Unity VR simulation.
+SOURCE-PROVENANCE.json records the source archive. No new license grant for
+the application or its authors' materials is implied by this file.
+
+Bundled third-party components:
+- Node.js 24.18.0: Node-LICENSE.txt (includes dependency notices).
+- Python 3.12.14: runtimes/python/LICENSE.txt; Python packages keep original
+  *.dist-info license files and metadata in runtimes/python/Lib/site-packages.
+- Ollama 0.40.3: Ollama-LICENSE.txt; additional native component notices,
+  including GPU runtime notices, in runtimes/ollama/lib/ollama.
+- Qwen3-4B GGUF quantization as distributed by Ollama, qwen3:4b:
+  Qwen3-4B-LICENSE.txt. Model layers and manifest included without changes.
+  https://huggingface.co/Qwen/Qwen3-4B
+- ws: workshop/node_modules/ws/LICENSE.
+- Frontend package licenses: licenses/frontend.
+- Poly Haven concrete texture: PolyHaven-concrete.txt (CC0).
+- Unity player / OpenXR components: built player and its runtime data;
+  Unity and headset runtime terms continue to apply. Unity Editor is excluded.
+
+Application changes in this distribution: local launcher, portable process
+supervision, per-user data directory, one-time desktop login, static web host,
+and configurable workshop bridge address. No commercial AMAS or Tecnomatix
+installation/license and no SteamVR/VIVE installer is bundled.
+
+Official license sources retrieved for this package:
+https://raw.githubusercontent.com/nodejs/node/v24.18.0/LICENSE
+https://raw.githubusercontent.com/ollama/ollama/v0.40.3/LICENSE
+https://huggingface.co/Qwen/Qwen3-4B/resolve/main/LICENSE

@@ -1,0 +1,13 @@
+{
+  "project": "Allur Twin x VR Workshop",
+  "sourceArchive": "Kostanay-hackaton-main.zip",
+  "workshopSource": "VR Workshop, completed finishing/quality/parking version",
+  "archiveSha256": "7253126A6EFCE9D1E8BDE731DF90B807254BE89EEDC7872BB66B5C85C789C3E3",
+  "created": "2026-10-19",
+  "originalSourceModified": false,
+  "ports": {
+    "web": 8089,
+    "allur": 8182,
+    "workshop": 4182
+  }
+}

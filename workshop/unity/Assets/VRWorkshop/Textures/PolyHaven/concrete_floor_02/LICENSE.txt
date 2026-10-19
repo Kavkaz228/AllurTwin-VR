@@ -1,0 +1,10 @@
+Concrete Floor 02 — Rob Tuytel / Poly Haven
+Source: https://polyhaven.com/a/concrete_floor_02
+License: CC0 1.0 Universal
+License information: https://polyhaven.com/license
+Legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Downloaded: 2026-10-19
+
+Included original 2K maps: diffuse, OpenGL normal, roughness, ambient occlusion.
+The Unity editor derives a smoothness map by inverting roughness.
+No paid assets or asset subscription is required.
